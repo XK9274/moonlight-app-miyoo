@@ -46,12 +46,6 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 
 ---
 
-## Troubleshooting
-
-- **If Moonlight doesn't start properly**: Delete `/mnt/SDCARD/App/config/pairdone` and `/mnt/SDCARD/App/moonlight.cache`, then try again.
-
----
-
 ## To Do
 
 - Custom keybinds
