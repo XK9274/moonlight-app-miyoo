@@ -37,7 +37,7 @@ on_success() {
 
     display_message "                      Success" "\033[32m" "           Pairing successful!" "           Starting Moonlight"
     touch "$moonlightdir/config/pairdone"
-    sleep 20
+    sleep 2
     exit
 }
 
