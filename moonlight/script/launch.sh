@@ -55,7 +55,6 @@ start_moonlight() {
     fi
       
     cpuclock 1700
-    pressMenu2Kill moonlight &
     monitor_output &
     script -c "LD_PRELOAD=$moonlightdir/lib/libuuid.so moonlight -config ../config/moonlight.conf stream" /tmp/output
 }
