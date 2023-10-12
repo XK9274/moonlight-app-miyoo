@@ -88,13 +88,13 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 - Use the menu option to "Unpair" and then restart the app.
 
 ### There are audio pops when opening the app. Is this normal?
-- Yes, this is a known issue.
+- Yes, this is a known issue with the MMP in general, it's totally "normal" with how the HW is configured.
 
 ### Input continues to be passed to the host even after exiting Moonlight. Why is this?
-- This is a known issue, and we're looking into it.
+- This is a known issue, and i'm looking into it.
 
-### My UI locks up sometimes when Moonlight doesn’t start. What's the cause?
-- This happens when rapidsplash fails to exit. We plan to update the source code to handle signals better. To clear it, open the gameswitcher or use the Search function with the Menu or Y key.
+### My UI locks up sometimes when Moonlight doesn’t start (Black screen). What's the cause?
+- This happens when rapidsplash fails to exit. I plan to update the source code to handle signals better. To clear it, open the gameswitcher or use the Search function with the Menu or Y key.
 
 ### There's a black screen when starting the app. How can I resolve this?
 - This is caused by Shellect, which builds the shell menus. A change to this component is planned. To temporarily fix it, scroll down on your D-pad several times, press A, and then open the gameswitcher/search menu. Close this and reopen Moonlight.
