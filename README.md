@@ -35,6 +35,7 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 - **Additional Keybinds**
   - Switch screen: `Select + L1`, `Select + L2`, `Select + R1`, `Select + R2`
   - Exit: `Select + Menu`
+  - Send escape: `Select + Y`
 
 ---
 
