@@ -6,18 +6,19 @@ export miyoodir=/mnt/SDCARD/miyoo
 cd $moonlightdir/bin
 export PATH=$PATH:$PWD
 export HOME=$(dirname "$PWD")
+rm -rf /tmp/st_exit
 
 do_cleanup() {
     is_process_running "rapid-splash" && killall -9 "rapid-splash"
     is_process_running "tail" && killall -9 "tail"
-    is_process_running "st" && killall -9 "st"
-    is_process_running "moonlight" && killall -9 "moonlight"
+    is_process_running "neo-st" && touch /tmp/st_exit
+    is_process_running "moonlight" && killall -15 "moonlight"
+    is_process_running "pressMenu2Term" && killall -15 "pressMenu2Term"
     is_file_exist "/tmp/output" && rm -rf "/tmp/output"
     is_file_exist "/tmp/launch" && rm "/tmp/launch"
     is_file_exist "/tmp/framebuffer_vinfo.bin" && rm "/tmp/framebuffer_vinfo.bin"
     is_file_exist "$moonlightdir/config/framebuffer_vinfo.bin" && rm "$moonlightdir/config/framebuffer_vinfo.bin"
     sync
-    exit
 }
 
 monitor_output() { # manages the splash screen based on the output of moonlight from sunshine
@@ -61,7 +62,6 @@ start_moonlight() {
 
 main() {
     . $moonlightdir/script/util.sh
-    echo "Sourcing"
     save_fb_properties # to restore framebuffer properties on the way out, stops black screens leaving back to mainui
     touch /tmp/output 
 
@@ -74,9 +74,8 @@ main() {
             do_cleanup
         fi
     else
-        echo "Pairing"
-        $sysdir/bin/st -e $moonlightdir/script/pair.sh
-        killall -9 st
+        $moonlightdir/bin/pressMenu2Term neo-st &
+        $moonlightdir/bin/neo-st -e $moonlightdir/script/pair.sh
         if [ -d "$moonlightdir/.cache" ] && [ -f "$moonlightdir/config/pairdone" ]; then # second catch for this file
             get_user_app
             start_moonlight

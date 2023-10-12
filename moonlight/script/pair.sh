@@ -10,26 +10,7 @@ export HOME=$(dirname "$PWD")
 restore_fb_properties
 
 welcome_message() {
-    echo -e "\033[94m"
-    echo -e "                                     .          \033[0m*\033[94m  "
-    echo -e "                                      *.           "
-    echo -e "                            \033[0m*\033[94m          **.         "
-    echo -e "              *                        .**.        "
-    echo -e "                                       .-*.        "
-    echo -e "                                *      .--.*       "
-    echo -e "                                       :..* |       "
-    echo -e "      \033[0mWelcome to Moonlight, the Miyoo edition!\033[94m"
-    echo -e "                                      .**...|       "
-    echo -e "      \033[0mMake sure Sunshine is running on the host!\033[94m"
-    echo -e "                     \033[0m*\033[94m               .::.**.;       "
-    echo -e "                                    .:..**..        "
-    echo -e "                                  -..::-.*.       "
-    echo -e "        \033[0m*\033[94m                         .:.**.**          "
-    echo -e "                                ::.::.**           "
-    echo -e "         *                   ::**.*.*.            "
-    echo -e "                           .---.****       \033[0m*\033[94m        "
-    echo -e "                      ...******.                  "
-    echo -e "\033[0m"
+    display_message "" "\033[0m" "Welcome to Moonlight, the Miyoo edition!" "Make sure Sunshine is running on the host!"
 }
 
 read_ip_address() {
@@ -40,21 +21,25 @@ read_ip_address() {
 
 on_success() {
     clear
-    echo -e "\n\n\n\n\n       \033[32mPairing successful!\033[0m"
-    sleep 1
-    echo -e "\n       \033[32mModifying the config file...\033[0m"
-    echo -e "\n       \033[32mWriting IP Address...\033[0m"
-
     sed -i '/^address =/d' "$moonlightdir/config/moonlight.conf"
+    if [ $? -ne 0 ]; then
+        display_message "                      Failed" "\033[31m" "Pairing failed!" "Exiting, sorry!"
+        sleep 1
+        touch /tmp/st_exit
+    fi
+
     sed -i "1i address = $IPADDR" "$moonlightdir/config/moonlight.conf"
+    if [ $? -ne 0 ]; then
+        display_message "                      Failed" "\033[31m" "Pairing failed!" "Exiting, sorry!"
+        sleep 1
+        touch /tmp/st_exit
+    fi
 
-    echo -e "\n       \033[32mComplete! Starting moonlight!\033[0m"
-
+    display_message "                      Success" "\033[32m" "           Pairing successful!" "           Starting Moonlight"
     touch "$moonlightdir/config/pairdone"
-    sleep 2
+    sleep 20
     exit
 }
-
 
 ## Start
 
@@ -62,7 +47,7 @@ main() {
     clear
     unset pair_check
     is_process_running "rapid-splash" && killall -9 "rapid-splash" 2> /dev/null
-    is_process_running "moonlight" && killall -9 "moonlight" 2> /dev/null
+    is_process_running "moonlight" && killall -15 "moonlight" 2> /dev/null
     welcome_message
     read_ip_address
     rm -rf $moonlightdir/.cache
@@ -74,7 +59,7 @@ main() {
         echo "Yes"
         echo "No, retry"
         echo "No, exit"
-      } | $sysdir/script/shellect.sh -t "Was pairing successful?"
+      } | $sysdir/script/shellect.sh -t "Was pairing successful?" -b "X : Keyboard    Menu : Exit    A : Select"
     )
 
     if [ "$pair_check" = "Yes" ]; then
@@ -82,6 +67,8 @@ main() {
     elif [ "$pair_check" = "No, retry" ]; then
         main
     elif [ "$pair_check" = "No, exit" ]; then
+        clear
+        is_process_running "pressMenu2Term" && killall -15 "pressMenu2Term"
         is_file_exist "$moonlightdir/config/pairdone" && rm "$moonlightdir/config/pairdone"
         is_file_exist "$moonlightdir/.cache" && rm -rf "$moonlightdir/.cache"  # Corrected this line
         is_file_exist "/tmp/launch" && rm "/tmp/launch"

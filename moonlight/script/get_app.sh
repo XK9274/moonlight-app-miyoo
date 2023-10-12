@@ -26,7 +26,7 @@ app_to_launch=$(
     LD_PRELOAD=$moonlightdir/lib/libuuid.so moonlight list $IPADDR
     echo "Unpair existing connection"
     echo "Exit"
-  } | $sysdir/script/shellect.sh -t "Select the application to launch"
+  } | $sysdir/script/shellect.sh -t "Select the application to launch" -b "X : Keyboard    Menu : Exit    A : Select"
 )
 
 clear
@@ -38,6 +38,8 @@ if [ "$app_to_launch" = "Unpair existing connection" ]; then
     sync
     exit
 elif [ "$app_to_launch" = "Exit" ]; then
+    clear
+    is_process_running "pressMenu2Term" && killall -15 "pressMenu2Term"
     exit
 else
     if [ ! -z "$app_to_launch" ] || [ ! -z "$clean_app_to_launch" ]; then
@@ -45,6 +47,6 @@ else
         write_app_to_launch
         touch /tmp/launch
         sync
-        killall -9 st
+        touch /tmp/st_exit
     fi
 fi
