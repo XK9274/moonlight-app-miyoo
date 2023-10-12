@@ -1,7 +1,0 @@
-[submodule "sdl2-moonlight-miyoo"]
-	path = sdl2-moonlight-miyoo
-	url = https://github.com/XK9274/sdl2-moonlight-miyoo
-	branch = sdl-2.0.20_ssd202d_miyoo-mini_moonlight
-[submodule "moonlight-embedded-miyoo"]
-	path = moonlight-embedded-miyoo
-	url = https://github.com/XK9274/moonlight-embedded-miyoo
