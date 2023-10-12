@@ -38,13 +38,21 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 
 ## Installation for Sunshine
 
-1. Install Sunshine on your machine. [Download Sunshine](https://github.com/LizardByte/Sunshine/releases)
-2. Browse to `https://localhost:47990/`, Create a local account and log in and open the Pin page
-![image](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ac3fc43e-17f3-4754-802f-2f765ea7729b)
-3. Copy the Moonlight app folder to `/mnt/SDCARD/App/moonlight` on your MMP
-4. Relaunch MainUI on your Miyoo or reboot.
-5. Launch the Moonlight app and type in your PC's IP address.
-![script_000](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/49fd1e9f-2956-448f-8d7c-d5d33e4cb973)
+1. **Install Sunshine on your machine.** [Download Sunshine](https://github.com/LizardByte/Sunshine/releases)
+2. **Browse to `https://localhost:47990/`**: Create a local account, log in, and open the Pin page.
+3. **Copy the Moonlight app folder**: Move it to `/mnt/SDCARD/App/moonlight` on your MMP.
+4. **Relaunch MainUI on your Miyoo or reboot.**
+5. **Launch the Moonlight app**: Type in your PC's IP address.  
+   ![script_000](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/49fd1e9f-2956-448f-8d7c-d5d33e4cb973)
+6. **Input the PIN**: The MMP will provide a pin; you need to input this on the Sunshine dashboard.  
+   ![script_007](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/cc31bb23-3252-423c-9550-2302e412b7bb)
+7. **Success Screen**: You'll now see a success message.  
+   ![image](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/3170d5e3-7a71-4223-a906-f4e93e610b8e)
+9. **Confirmation Page**: On the MMP, you'll see a page asking if this was a success.  
+   ![script_009](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/e22a662a-2981-4211-8043-1a14662235b6)
+10. **App Screen**: When "yes" is selected, you'll now see the app screen.  
+    ![script_010](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/67b04a4d-97c9-4df4-8aab-dc75e9600fe8)
+11. **Connect to an App**: Select an app and it should connect; sometimes the app fails to launch on both Moonlight and Nvidia GameStream.
 
 ---
 
