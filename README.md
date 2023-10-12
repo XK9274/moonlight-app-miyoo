@@ -5,8 +5,7 @@
 ## Version
 Moonlight for the Miyoo Mini Plus is currently at v0.6.
 
-- [Download Latest Version](#)
-- [Changelog](#)
+- [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
 
 ---
 
