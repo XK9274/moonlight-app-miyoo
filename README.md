@@ -109,7 +109,7 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 
 ### V0.6
 - [Download](#)
-  - Fixed app list loop (Thank you for checking, Vitty85)
+  - Fixed app list loop (Thank you for checking, [vitty85](https://github.com/Vitty85)
 
 ### V0.5
 - Added ability to swap screens with `Select + Bumpers`
