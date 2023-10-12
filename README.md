@@ -1,7 +1,7 @@
 # Moonlight Miyoo Edition
 
 ## Version
-Moonlight for the Miyoo Mini Plus is currently at v0.6.
+Moonlight for the Miyoo Mini Plus is currently at v0.7.
 
 - [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
 - [Changelog](https://github.com/XK9274/moonlight-app-miyoo/blob/main/README.md#changelog)
@@ -28,12 +28,14 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 ---
 
 ## Keybinds
-![DefKbind](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/1965216d-d305-48b2-9461-9c6980da6375)
+![DefKbind](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/d631b786-f833-41da-bbe3-758e16fa6c2f)
 
 **Note**: Moonlight on the Miyoo will only pass keyboard commands to the host, meaning no mouse and no gamepad input for now.
 
 - **Additional Keybinds**
   - Switch screen: `Select + L1`, `Select + L2`, `Select + R1`, `Select + R2`
+  - Exit: `Select + Menu`
+  - Send escape: `Select + Y`
 
 ---
 
@@ -112,8 +114,14 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 
 ## Changelog
 
+### V0.7
+  - Fixed black screen issue
+  - Fixed input spam at end of session
+  - Added new key shortcut: Select + Menu to exit
+  - Handles SIGINT/SIGTERM sent from term to cleanup mi_gfx/mi_sys
+  - Remove pressmenu2Kill from launch.sh
+
 ### V0.6
-- [Download](#)
   - Fixed app list loop (Thank you for checking, [vitty85](https://github.com/Vitty85)
 
 ### V0.5
