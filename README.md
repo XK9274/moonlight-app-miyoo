@@ -1,5 +1,3 @@
----
-
 # Moonlight Miyoo Edition
 
 ## Version
