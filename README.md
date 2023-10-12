@@ -12,7 +12,7 @@ Moonlight for the Miyoo Mini Plus is currently at v0.6.
 
 ## Overview
 
-This project is in its early stages and has bugs. It is not restricted to Nvidia; you can also use AMD etc., with Sunshine.
+This project is in its early stages and has bugs. This is not restricted to Nvidia, you can use AMD etc with Sunshine.
 
 - Discord Contact: @XK user: \_xk\_
 - [FAQ](#)
@@ -78,15 +78,34 @@ This project is in its early stages and has bugs. It is not restricted to Nvidia
 
 ---
 
-## FAQ
+## Frequently Asked Questions (FAQ)
 
-- [How to add custom apps to Sunshine](https://docs.lizardbyte.dev/projects/sunshine/en/latest/about/app_examples.html)
+### Is there a build script for Moonlight?
+- Not yet, but soon.
 
-- **Is there a build script for Moonlight?**  
-  Not yet, but soon.
+### It's laggy. What can I do?
+- Don't stream at 4k/2k resolutions. Remove any higher resolutions from Sunshine under the General tab.
 
-- **Other common issues and fixes**:  
-  See [FAQ](#)
+### The display is letterboxed on the MMP display when using Sunshine. How do I fix this?
+- Set your desktop resolution to a 4:3 aspect ratio, such as 1400x1050 or 1280x960. If you're launching directly into a game, set the game's aspect ratio to 4:3 as well.
+
+### Moonlight crashes after quitting a running stream and then reconnecting with Sunshine.
+- The stream takes time to fully terminate. Give it a few seconds before trying to reconnect.
+
+### The app has stopped or is not working. What should I do?
+- Use the menu option to "Unpair" and then restart the app.
+
+### There are audio pops when opening the app. Is this normal?
+- Yes, this is a known issue.
+
+### Input continues to be passed to the host even after exiting Moonlight. Why is this?
+- This is a known issue, and we're looking into it.
+
+### My UI locks up sometimes when Moonlight doesn’t start. What's the cause?
+- This happens when rapidsplash fails to exit. We plan to update the source code to handle signals better. To clear it, open the gameswitcher or use the Search function with the Menu or Y key.
+
+### There's a black screen when starting the app. How can I resolve this?
+- This is caused by Shellect, which builds the shell menus. A change to this component is planned. To temporarily fix it, scroll down on your D-pad several times, press A, and then open the gameswitcher/search menu. Close this and reopen Moonlight.
 
 ---
 
