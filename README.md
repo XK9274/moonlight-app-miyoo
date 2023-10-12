@@ -15,7 +15,6 @@ Moonlight for the Miyoo Mini Plus is currently at v0.6.
 This project is in its early stages and has bugs. This is not restricted to Nvidia, you can use AMD etc with Sunshine.
 
 - Discord Contact: @XK user: \_xk\_
-- [FAQ](#)
 
 ---
 
