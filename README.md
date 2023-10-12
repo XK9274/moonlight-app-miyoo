@@ -46,15 +46,15 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 3. **Copy the Moonlight app folder**: Move it to `/mnt/SDCARD/App/moonlight` on your MMP.
 4. **Relaunch MainUI on your Miyoo or reboot.**
 5. **Launch the Moonlight app**: Type in your PC's IP address.  
-   ![script_000](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/49fd1e9f-2956-448f-8d7c-d5d33e4cb973)
+   ![script_012](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/8ec94d40-d454-4535-b660-6e68d37ff1ec)
 6. **Input the PIN**: The MMP will provide a pin; you need to input this on the Sunshine dashboard.  
-   ![script_007](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/cc31bb23-3252-423c-9550-2302e412b7bb)
+   ![script_014](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ce398e2b-32a7-4a43-aeab-dea95700dbce)
 7. **Confirmation Page**: On the MMP, you'll see a page asking if this was a success.  
-   ![script_008](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/d73698ab-045d-46b6-a62a-90f3d84afbd6)
+   ![script_015](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/fdc37de4-16fa-4dca-affb-423e4652eab4)
 9. **Success Screen**: You'll now see a success message.   
-   ![script_009](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/e22a662a-2981-4211-8043-1a14662235b6)
+   ![script_016](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ed13c223-c89d-40bc-9646-4a1491a2f4d0)
 10. **App Screen**: When "yes" is selected, you'll now see the app screen.  
-    ![script_010](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/67b04a4d-97c9-4df4-8aab-dc75e9600fe8)
+    ![script_017](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/f8ebbafa-a19b-49ef-94f6-b990418b514c)
 11. **Connect to an App**: Select an app and it should connect; sometimes the app fails to launch on both Moonlight and Nvidia GameStream.
 
 ---
@@ -113,6 +113,11 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 ---
 
 ## Changelog
+### V0.8
+  - New terminal w/ font by eggs
+  - Better displays
+  - Some error checking
+  - Footer messages for help knowing which keys to press
 
 ### V0.7
   - Fixed black screen issue
