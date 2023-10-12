@@ -28,7 +28,7 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 ---
 
 ## Keybinds
-![DefKbind](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/1965216d-d305-48b2-9461-9c6980da6375)
+![DefKbind](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/d631b786-f833-41da-bbe3-758e16fa6c2f)
 
 **Note**: Moonlight on the Miyoo will only pass keyboard commands to the host, meaning no mouse and no gamepad input for now.
 
