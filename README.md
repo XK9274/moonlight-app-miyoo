@@ -41,12 +41,12 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 1. Install Sunshine on your machine. [Download Sunshine](https://github.com/LizardByte/Sunshine/releases)
 ![script_000](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/49fd1e9f-2956-448f-8d7c-d5d33e4cb973)
 2. Browse to `https://localhost:47990/` and open the Pin page
-3. Create a local account and log in.
-4. Copy the Moonlight app folder to `/mnt/SDCARD/App/moonlight`
-5. Relaunch MainUI on your Miyoo or reboot.
-6. Launch the Moonlight app and type in your PC's IP address.
-7. Open sunshine and pair on this screen:
 ![image](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/64d84dc1-40b1-4024-b76b-db1fbed31bbe)
+4. Create a local account and log in.
+5. Copy the Moonlight app folder to `/mnt/SDCARD/App/moonlight`
+6. Relaunch MainUI on your Miyoo or reboot.
+7. Launch the Moonlight app and type in your PC's IP address.
+
 
 ---
 
