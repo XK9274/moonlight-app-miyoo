@@ -70,7 +70,7 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
   - [GitHub Repository](https://github.com/steward-fu/sdl/tree/sdl-2.0.20_ssd202d_miyoo-mini_drastic)
   - [Moonlight Repository](https://github.com/XK9274/sdl2-moonlight-miyoo/tree/sdl-2.0.20_ssd202d_miyoo-mini_moonlight)
   
-- [Moonlight GitHub Repository](https://github.com/moonlight-stream/moonlight-embedded)
+- [Moonlight Upstream GitHub Repository](https://github.com/moonlight-stream/moonlight-embedded)
 
 ---
 
