@@ -126,7 +126,7 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 - Added `Unpair` menu selection to start screen
 
 ### V0.2
-- [Download Older Version](#)
+- [Download Older Version](https://drive.google.com/file/d/1bVOTvM2zHQSZ4IN4r1TF5NskHOQlbD4g/view?usp=sharing)
   - Fixed Controls: L2 now works, control scheme changed
   - Changed how moonlight is launched in `launch.sh`
   - Added an animated splash to the launching stage (after pairing)  
