@@ -1,7 +1,7 @@
 # Moonlight Miyoo Edition
 
 ## Version
-Moonlight for the Miyoo Mini Plus is currently at v0.6.
+Moonlight for the Miyoo Mini Plus is currently at v0.7.
 
 - [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
 - [Changelog](https://github.com/XK9274/moonlight-app-miyoo/blob/main/README.md#changelog)
@@ -113,8 +113,14 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 
 ## Changelog
 
+### V0.7
+  - Fixed black screen issue
+  - Fixed input spam at end of session
+  - Added new key shortcut: Select + Menu to exit
+  - Handles SIGINT/SIGTERM sent from term to cleanup mi_gfx/mi_sys
+  - Remove pressmenu2Kill from launch.sh
+
 ### V0.6
-- [Download](#)
   - Fixed app list loop (Thank you for checking, [vitty85](https://github.com/Vitty85)
 
 ### V0.5
