@@ -1,16 +1,16 @@
 {
-    "A": "S",
-    "B": "T",
-    "X": "L",
-    "Y": "G",
-    "L1": "Q",
-    "L2": "O",
-    "R1": "i",
-    "R2": "p",
+    "A": "SPACE",
+    "B": "BACKSPACE",
+    "X": "X",
+    "Y": "Y",
+    "L1": "E",
+    "L2": "Q",
+    "R1": "T",
+    "R2": "P",
     "LeftDpad": "LEFT",
     "RightDpad": "RIGHT",
     "UpDpad": "UP",
     "DownDpad": "DOWN",
-    "Start": "space",
-    "Select": "backspace"
+    "Start": "RETURN",
+    "Select": "M"
 }
