@@ -53,7 +53,7 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
    ![script_015](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/fdc37de4-16fa-4dca-affb-423e4652eab4)
 9. **Success Screen**: You'll now see a success message.   
    ![script_016](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ed13c223-c89d-40bc-9646-4a1491a2f4d0)
-10. **App Screen**: When "yes" is selected, you'll now see the app screen.  
+10. **App Screen**: Important: Do not press start! Minimise the keyboard with X, then press A to make your selection. When "yes" is selected, you'll now see the app screen.  
     ![script_017](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/f8ebbafa-a19b-49ef-94f6-b990418b514c)
 11. **Connect to an App**: Select an app and it should connect; sometimes the app fails to launch on both Moonlight and Nvidia GameStream.
 
