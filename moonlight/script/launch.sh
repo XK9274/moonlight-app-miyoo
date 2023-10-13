@@ -3,9 +3,9 @@ export moonlightdir=/mnt/SDCARD/App/moonlight
 export moonlightconf=$moonlightdir/config/moonlight.conf
 export sysdir=/mnt/SDCARD/.tmp_update
 export miyoodir=/mnt/SDCARD/miyoo
-cd $moonlightdir/bin
-export PATH=$PATH:$PWD
-export HOME=$(dirname "$PWD")
+cd $moonlightdir
+export PATH=$PATH:$PWD/bin
+export HOME=$moonlightdir
 rm -rf /tmp/st_exit
 
 do_cleanup() {
@@ -54,7 +54,7 @@ start_moonlight() {
     cpuclock 1700
     monitor_output &
     set_snd_level "${curvol}" &
-    script -c "LD_PRELOAD=$moonlightdir/lib/libuuid.so moonlight -config ../config/moonlight.conf stream" /tmp/output
+    script -c "LD_PRELOAD=$moonlightdir/lib/libuuid.so moonlight -config ./config/moonlight.conf stream" /tmp/output
 }
 
 main() {

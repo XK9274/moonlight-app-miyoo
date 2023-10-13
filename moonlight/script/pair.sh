@@ -1,9 +1,9 @@
 export moonlightdir=/mnt/SDCARD/App/moonlight
 export sysdir=/mnt/SDCARD/.tmp_update
 export LD_LIBRARY_PATH=../lib:/lib:/config/lib:/mnt/SDCARD/miyoo/lib:/mnt/SDCARD/.tmp_update/lib:/mnt/SDCARD/.tmp_update/lib/parasyte:/sbin:/usr/sbin:/bin:/usr/bin
-cd $moonlightdir/bin
-export PATH=$PATH:$PWD
-export HOME=$(dirname "$PWD")
+cd $moonlightdir
+export PATH=$PATH:$PWD/bin
+export HOME=$moonlightdir
 
 . $moonlightdir/script/util.sh
 
