@@ -1,7 +1,7 @@
 # Moonlight Miyoo Edition
 
 ## Version
-Moonlight for the Miyoo Mini Plus is currently at v0.8.
+Moonlight for the Miyoo Mini Plus is currently at v0.9.
 
 - [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
 - [Changelog](https://github.com/XK9274/moonlight-app-miyoo/blob/main/README.md#changelog)
@@ -83,6 +83,13 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 
 ## Frequently Asked Questions (FAQ)
 
+### When i launch the app it says "loading" and then closes instantly
+- If you used filezilla to transfer the files to the card, delete them and use Samba/HTTP instead. IF this doesn't resolve it, check the line endings on the script files are UNIX. not Windows.
+- If this doesn't resolve it. Contact me
+
+### When i press start on a menu option the app closes
+- Close the keyboard with the X button on the MMP, then select the menu item with the A button
+  
 ### Is there a build script for Moonlight?
 - Not yet, but soon.
 
@@ -113,6 +120,9 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 ---
 
 ## Changelog
+### V0.9
+  - Fix bad util.sh - https://github.com/XK9274/moonlight-app-miyoo/pull/1
+
 ### V0.8
   - New terminal w/ font by eggs
   - Better displays
