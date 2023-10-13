@@ -15,7 +15,6 @@ display_message() {
     echo -e "                                      *.           "
     echo -e "                            ${white_color}*${moon_color}          **.         "
     echo -e "              *                        .**.        "
-    xm
     echo -e "                                       .-*.        "
     echo -e "                                *      .--.*       "
     echo -e "                                       :..* |       "

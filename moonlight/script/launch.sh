@@ -18,6 +18,7 @@ do_cleanup() {
     is_file_exist "/tmp/launch" && rm "/tmp/launch"
     is_file_exist "/tmp/framebuffer_vinfo.bin" && rm "/tmp/framebuffer_vinfo.bin"
     is_file_exist "$moonlightdir/config/framebuffer_vinfo.bin" && rm "$moonlightdir/config/framebuffer_vinfo.bin"
+    cpuclock 1200
     sync
 }
 
