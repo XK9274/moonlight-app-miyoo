@@ -62,11 +62,9 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 ## To Do
 
 - Custom keybinds
-- Add keybind for sending an escape
 - Mouse swap
 - "Gamepad" support instead of keyboard input
 - Tidy up all the drastic logic
-- Correctly close Moonlight
 - Proper wrapper development
 
 ---
