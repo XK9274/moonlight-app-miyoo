@@ -48,21 +48,18 @@ start_moonlight() {
     export EGL_VIDEODRIVER=mmiyoo
     
    
-    if [ -f /mnt/SDCARD/.tmp_update/script/stop_audioserver.sh ]; then
-        /mnt/SDCARD/.tmp_update/script/stop_audioserver.sh
-    else
-        killall audioserver
-        killall audioserver.mod
-    fi
+    kill_audio_servers
       
     cpuclock 1700
     monitor_output &
+    set_snd_level "${curvol}" &
     script -c "LD_PRELOAD=$moonlightdir/lib/libuuid.so moonlight -config ../config/moonlight.conf stream" /tmp/output
 }
 
 main() {
-    . $moonlightdir/script/util.sh
+    . $moonlightdir/script/util.sh    
     save_fb_properties # to restore framebuffer properties on the way out, stops black screens leaving back to mainui
+    curvol=$(get_curvol) # grab current volume
     touch /tmp/output 
 
     if [ -f $moonlightdir/config/pairdone ]; then
