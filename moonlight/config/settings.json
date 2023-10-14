@@ -12,5 +12,6 @@
     "UpDpad": "UP",
     "DownDpad": "DOWN",
     "Start": "RETURN",
-    "Select": "M"
+    "Select": "M",
+    "Menu": "ESCAPE"
 }

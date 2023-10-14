@@ -30,9 +30,7 @@ main() {
 
     echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n                Waiting for app list\n"
     echo -e "                Press menu to quit\n"
-    
-    clear
-    
+        
     if [ "$app_to_launch" = "Unpair existing connection" ]; then
         is_file_exist "$moonlightdir/config/pairdone" && rm "$moonlightdir/config/pairdone"
         is_dir_exist "$moonlightdir/.cache" && rm -rf "$moonlightdir/.cache"
