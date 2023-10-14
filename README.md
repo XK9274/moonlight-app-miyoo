@@ -1,7 +1,7 @@
 # Moonlight Miyoo Edition
 
 ## Version
-Moonlight for the Miyoo Mini Plus is currently at v0.9.
+Moonlight for the Miyoo Mini Plus is currently at v1.0.
 
 - [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
 - [Changelog](https://github.com/XK9274/moonlight-app-miyoo/blob/main/README.md#changelog)
@@ -40,12 +40,13 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 1. **Install Sunshine on your machine.** [Download Sunshine](https://github.com/LizardByte/Sunshine/releases)
 2. **Browse to `https://localhost:47990/`**: Create a local account, log in, and open the Pin page.
 3. **Copy the Moonlight app folder**: Move it to `/mnt/SDCARD/App/moonlight` on your MMP.
-4. **Relaunch MainUI on your Miyoo or reboot.**
-5. **Launch the Moonlight app**: Type in your PC's IP address.  
+   ![image](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/dda48437-d411-4221-9630-fbab5ce07def)
+5. **Relaunch MainUI on your Miyoo or reboot.**
+6. **Launch the Moonlight app**: Type in your PC's IP address.  
    ![script_012](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/8ec94d40-d454-4535-b660-6e68d37ff1ec)
-6. **Input the PIN**: The MMP will provide a pin; you need to input this on the Sunshine dashboard.  
+7. **Input the PIN**: The MMP will provide a pin; you need to input this on the Sunshine dashboard.  
    ![script_014](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ce398e2b-32a7-4a43-aeab-dea95700dbce)
-7. **Confirmation Page**: On the MMP, you'll see a page asking if this was a success.  
+8. **Confirmation Page**: On the MMP, you'll see a page asking if this was a success.  
    ![script_015](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/fdc37de4-16fa-4dca-affb-423e4652eab4)
 9. **Success Screen**: You'll now see a success message.   
    ![script_016](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ed13c223-c89d-40bc-9646-4a1491a2f4d0)
@@ -114,6 +115,12 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 ---
 
 ## Changelog
+### v1.0
+  - Added correction for volume level when entering moonlight 
+  - Fixed exit method in moonlight to close correctly.
+  - Fixed a double free segfault
+  - Added custom keybinds file `settings.json` that uses SDLK keycodes (https://www.libsdl.org/release/SDL-1.2.15/docs/html/sdlkey.html) - Follow example file.
+
 ### V0.9
   - Fix bad util.sh - https://github.com/XK9274/moonlight-app-miyoo/pull/1
 
