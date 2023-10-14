@@ -1,7 +1,7 @@
 # Moonlight Miyoo Edition
 
 ## Version
-Moonlight for the Miyoo Mini Plus is currently at v1.0.
+Moonlight for the Miyoo Mini Plus is currently at v1.1.
 
 - [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
 - [Changelog](https://github.com/XK9274/moonlight-app-miyoo/blob/main/README.md#changelog)
@@ -146,6 +146,9 @@ The file will contain:
 ---
 
 ## Changelog
+### v1.1
+  - Added cpuclock settings.json object
+
 ### v1.0
   - Added correction for volume level when entering moonlight 
   - Fixed exit method in moonlight to close correctly.
