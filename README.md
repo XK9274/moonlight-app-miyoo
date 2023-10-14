@@ -88,6 +88,7 @@ CPUclock is ranged between 1000 -> 1950, defaulting at 1700.
 
 ## To Do
 
+- Add on the go overclocking control w/ keybind.
 - Custom keybinds
 - Mouse swap
 - "Gamepad" support instead of keyboard input
