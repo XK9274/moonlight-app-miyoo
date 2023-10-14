@@ -51,7 +51,6 @@ start_moonlight() {
    
     kill_audio_servers
       
-    cpuclock 1700
     monitor_output &
     set_snd_level "${curvol}" &
     script -c "LD_PRELOAD=$moonlightdir/lib/libuuid.so moonlight -config ./config/moonlight.conf stream" /tmp/output

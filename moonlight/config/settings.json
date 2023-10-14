@@ -13,5 +13,6 @@
     "DownDpad": "DOWN",
     "Start": "RETURN",
     "Select": "M",
-    "Menu": "ESCAPE"
+    "Menu": "ESCAPE",
+    "cpuclock": "1700"
 }
