@@ -22,7 +22,6 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 ## Requirements
 
 - Packaged for Onion (Porting to other UIs is welcome)
-- Simple terminal (st) from Onion's package manager
 - Latest RC of Onion
 - Recent firmware
 
