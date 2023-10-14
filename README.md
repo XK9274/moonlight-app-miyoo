@@ -82,8 +82,9 @@ The file will contain:
     "cpuclock": "1700"
 }
 ```
-Keybind values will have to be set based on their SDLK value, you can find the full list here: [SDLK Common names](https://www.libsdl.org/release/SDL-1.2.15/docs/html/sdlkey.html)
-CPUclock is ranged between 1000 -> 1950, defaulting at 1700. 
+- Keybind values will have to be set based on their SDLK value, you can find the full list here: [SDLK Common names](https://www.libsdl.org/release/SDL-1.2.15/docs/html/sdlkey.html)
+   - For example; SDLK_BACKSPACE will become BACKSPACE, SDLK_RCTRL will become RCTRL.
+- CPUclock is ranged between 1000 -> 1950, defaulting at 1700. 
 
 ## To Do
 
