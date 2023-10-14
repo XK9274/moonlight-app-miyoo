@@ -6,6 +6,7 @@ Moonlight for the Miyoo Mini Plus is currently at v1.0.
 - [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
 - [Changelog](https://github.com/XK9274/moonlight-app-miyoo/blob/main/README.md#changelog)
 - [FAQ](https://github.com/XK9274/moonlight-app-miyoo/tree/main#frequently-asked-questions-faq)
+- [Custom Settings/Keybinds](https://github.com/XK9274/moonlight-app-miyoo/tree/main#frequently-asked-questions-faq)
 - [Credits](https://github.com/XK9274/moonlight-app-miyoo#credits)
 
 ---
@@ -55,6 +56,34 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 11. **Connect to an App**: Select an app and it should connect; sometimes the app fails to launch on both Moonlight and Nvidia GameStream.
 
 ---
+
+## Custom keybinds/cpuclock value
+
+To set up your custom keybinds, you'll currently need to open the file `/mnt/SDCARD/App/moonlight/config/settings.json`
+
+The file will contain:
+
+```json
+{
+    "A": "SPACE",
+    "B": "BACKSPACE",
+    "X": "X",
+    "Y": "Y",
+    "L1": "E",
+    "L2": "Q",
+    "R1": "T",
+    "R2": "P",
+    "LeftDpad": "LEFT",
+    "RightDpad": "RIGHT",
+    "UpDpad": "UP",
+    "DownDpad": "DOWN",
+    "Start": "RETURN",
+    "Select": "M",
+    "Menu": "ESCAPE",
+    "cpuclock": "1700"
+}
+```
+Keybind values will have to be set based on their SDLK value, you can find the full list here: [SDLK Common names](https://www.libsdl.org/release/SDL-1.2.15/docs/html/sdlkey.html)
 
 ## To Do
 
