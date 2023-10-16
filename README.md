@@ -48,7 +48,7 @@ Currently A is left click, B is right click.
 5. **Relaunch MainUI on your Miyoo or reboot.**
 6. **Launch the Moonlight app**: Type in your PC's IP address.  
    ![script_012](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/8ec94d40-d454-4535-b660-6e68d37ff1ec)
-7. **Input the PIN**: The MMP will provide a pin; you need to input this on the Sunshine dashboard.  
+7. **Input the PIN**: The MMP will provide a pin; you need to input this on the Sunshine dashboard. Minimise the keyboard with X as it might cause problems on the following screens. 
    ![script_014](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ce398e2b-32a7-4a43-aeab-dea95700dbce)
 8. **Confirmation Page**: On the MMP, you'll see a page asking if this was a success.  
    ![script_015](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/fdc37de4-16fa-4dca-affb-423e4652eab4)
