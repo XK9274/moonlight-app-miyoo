@@ -32,6 +32,7 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 
 
 Press START to exit mouse mode.
+Currently A is left click, B is right click.
 
 **Note**: Moonlight on the Miyoo will only pass keyboard commands to the host, meaning no mouse and no gamepad input for now.
 
