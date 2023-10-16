@@ -1,7 +1,7 @@
 # Moonlight Miyoo Edition
 
 ## Version
-Moonlight for the Miyoo Mini Plus is currently at v1.1.
+Moonlight for the Miyoo Mini Plus is currently at v1.2.
 
 - [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
 - [Changelog](https://github.com/XK9274/moonlight-app-miyoo/blob/main/README.md#changelog)
@@ -28,10 +28,13 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 ---
 
 ## Keybinds
+![DefKbind](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/adec936a-f918-4415-b34b-e2e6b8991b6b)
 
+
+Press START to exit mouse mode.
 
 **Note**: Moonlight on the Miyoo will only pass keyboard commands to the host, meaning no mouse and no gamepad input for now.
-![DefKbind](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/f212f4a0-bc65-42c5-af4e-fc5c1860e27a)
+
 
 ---
 
@@ -146,6 +149,9 @@ The file will contain:
 ---
 
 ## Changelog
+### v1.2
+  - Added mouse emulation
+
 ### v1.1
   - Added cpuclock settings.json object
 
