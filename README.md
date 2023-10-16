@@ -68,22 +68,30 @@ The file will contain:
 
 ```json
 {
-    "A": "SPACE",
-    "B": "BACKSPACE",
-    "X": "X",
-    "Y": "Y",
-    "L1": "E",
-    "L2": "Q",
-    "R1": "T",
-    "R2": "P",
-    "LeftDpad": "LEFT",
-    "RightDpad": "RIGHT",
-    "UpDpad": "UP",
-    "DownDpad": "DOWN",
-    "Start": "RETURN",
-    "Select": "M",
-    "Menu": "ESCAPE",
-    "cpuclock": "1700"
+    "customkeys": {
+        "A": "SPACE",
+        "B": "BACKSPACE",
+        "X": "X",
+        "Y": "Y",
+        "L1": "E",
+        "L2": "Q",
+        "R1": "T",
+        "R2": "P",
+        "LeftDpad": "LEFT",
+        "RightDpad": "RIGHT",
+        "UpDpad": "UP",
+        "DownDpad": "DOWN",
+        "Start": "RETURN",
+        "Select": "M",
+        "Menu": "ESCAPE"
+    },
+    "cpuclock": "1900",
+    "mouse": {
+        "scaleFactor": 2,
+        "acceleration": 2.0,
+        "accelerationRate": 2.5,
+        "maxAcceleration": 10.0
+    }
 }
 ```
 - Keybind values will have to be set based on their SDLK value, you can find the full list here: [SDLK Common names](https://www.libsdl.org/release/SDL-1.2.15/docs/html/sdlkey.html)
