@@ -138,3 +138,36 @@ set_snd_level() {
         sleep 0.2
     done
 }
+
+do_cleanup() {
+    is_process_running "rapid-splash" && killall -9 "rapid-splash"
+    is_process_running "tail" && killall -9 "tail"
+    is_process_running "neo-st" && touch /tmp/st_exit
+    is_process_running "moonlight" && killall -15 "moonlight"
+    is_process_running "pressMenu2Term" && killall -15 "pressMenu2Term"
+    is_file_exist "/tmp/output" && rm -rf "/tmp/output"
+    is_file_exist "/tmp/launch" && rm "/tmp/launch"
+    is_file_exist "/tmp/framebuffer_vinfo.bin" && rm "/tmp/framebuffer_vinfo.bin"
+    is_file_exist "$moonlightdir/config/framebuffer_vinfo.bin" && rm "$moonlightdir/config/framebuffer_vinfo.bin"
+    cpuclock 1200
+    sync
+}
+
+monitor_output() { # manages the splash screen based on the output of moonlight from sunshine
+  tail -f /tmp/output | while read -r line; do
+    
+    if echo "$line" | grep -q -E "Starting RTSP handshake...Audio port: 48000|Starting video stream"; then
+      echo "Matched Input stream"
+      killall -9 rapid-splash
+      echo "Killing splash"
+      break
+    fi
+    
+    if echo "$line" | grep -q -E "RTSP ANNOUNCE request failed: 503|Can't find app|Starting RTSP handshake...RTSP OPTIONS request failed: 552"; then
+      echo "Failure detected. Closing everything."
+      do_cleanup
+      sleep 2
+    fi
+
+  done
+}
