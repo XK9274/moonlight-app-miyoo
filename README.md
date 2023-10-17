@@ -1,7 +1,7 @@
 # Moonlight Miyoo Edition
 
 ## Version
-Moonlight for the Miyoo Mini Plus is currently at v1.1.
+Moonlight for the Miyoo Mini Plus is currently at v1.2.
 
 - [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
 - [Changelog](https://github.com/XK9274/moonlight-app-miyoo/blob/main/README.md#changelog)
@@ -28,10 +28,14 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 ---
 
 ## Keybinds
+![DefKbind](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/adec936a-f918-4415-b34b-e2e6b8991b6b)
 
+
+Press START to exit mouse mode.
+Currently A is left click, B is right click.
 
 **Note**: Moonlight on the Miyoo will only pass keyboard commands to the host, meaning no mouse and no gamepad input for now.
-![DefKbind](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/f212f4a0-bc65-42c5-af4e-fc5c1860e27a)
+
 
 ---
 
@@ -44,7 +48,7 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 5. **Relaunch MainUI on your Miyoo or reboot.**
 6. **Launch the Moonlight app**: Type in your PC's IP address.  
    ![script_012](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/8ec94d40-d454-4535-b660-6e68d37ff1ec)
-7. **Input the PIN**: The MMP will provide a pin; you need to input this on the Sunshine dashboard.  
+7. **Input the PIN**: The MMP will provide a pin; you need to input this on the Sunshine dashboard. Minimise the keyboard with X as it might cause problems on the following screens. 
    ![script_014](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ce398e2b-32a7-4a43-aeab-dea95700dbce)
 8. **Confirmation Page**: On the MMP, you'll see a page asking if this was a success.  
    ![script_015](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/fdc37de4-16fa-4dca-affb-423e4652eab4)
@@ -64,22 +68,30 @@ The file will contain:
 
 ```json
 {
-    "A": "SPACE",
-    "B": "BACKSPACE",
-    "X": "X",
-    "Y": "Y",
-    "L1": "E",
-    "L2": "Q",
-    "R1": "T",
-    "R2": "P",
-    "LeftDpad": "LEFT",
-    "RightDpad": "RIGHT",
-    "UpDpad": "UP",
-    "DownDpad": "DOWN",
-    "Start": "RETURN",
-    "Select": "M",
-    "Menu": "ESCAPE",
-    "cpuclock": "1700"
+    "customkeys": {
+        "A": "SPACE",
+        "B": "BACKSPACE",
+        "X": "X",
+        "Y": "Y",
+        "L1": "E",
+        "L2": "Q",
+        "R1": "T",
+        "R2": "P",
+        "LeftDpad": "LEFT",
+        "RightDpad": "RIGHT",
+        "UpDpad": "UP",
+        "DownDpad": "DOWN",
+        "Start": "RETURN",
+        "Select": "M",
+        "Menu": "ESCAPE"
+    },
+    "cpuclock": "1900",
+    "mouse": {
+        "scaleFactor": 2,
+        "acceleration": 2.0,
+        "accelerationRate": 2.5,
+        "maxAcceleration": 10.0
+    }
 }
 ```
 - Keybind values will have to be set based on their SDLK value, you can find the full list here: [SDLK Common names](https://www.libsdl.org/release/SDL-1.2.15/docs/html/sdlkey.html)
@@ -146,6 +158,9 @@ The file will contain:
 ---
 
 ## Changelog
+### v1.2
+  - Added mouse emulation
+
 ### v1.1
   - Added cpuclock settings.json object
 
