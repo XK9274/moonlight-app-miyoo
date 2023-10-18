@@ -28,8 +28,7 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 ---
 
 ## Keybinds
-![DefKbind](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/adec936a-f918-4415-b34b-e2e6b8991b6b)
-
+![DefKbind](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/0ed0fead-2cf4-4369-ba39-3af86ea895a2)
 
 Press START to exit mouse mode.
 Currently A is left click, B is right click.
