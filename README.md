@@ -1,7 +1,19 @@
 # Moonlight Miyoo Edition
 
 # WIP Gui wrapper
-<img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/84ada648-c138-4cc3-a24b-ec213a8f281b" width="50%" height="50%">
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/84ada648-c138-4cc3-a24b-ec213a8f281b" width="200">
+    </td>
+    <td>
+      <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/e943c9f1-08f9-4d33-be64-5b3a3bd9def7" width="200">
+    </td>
+    <td>
+      <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/e8c3d282-d408-42ac-9333-ab8ea6ea6df3" width="200">
+    </td>
+  </tr>
+</table>
 
 
 ## Version
