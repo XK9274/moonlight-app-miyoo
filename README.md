@@ -1,5 +1,9 @@
 # Moonlight Miyoo Edition
 
+# WIP Gui wrapper
+<img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/84ada648-c138-4cc3-a24b-ec213a8f281b" width="50%" height="50%">
+
+
 ## Version
 Moonlight for the Miyoo Mini Plus is currently at v1.2.
 
