@@ -11,6 +11,15 @@ get_curvol() {
     awk '/LineOut/ {if (!printed) {gsub(",", "", $8); print $8; printed=1}}' /proc/mi_modules/mi_ao/mi_ao0
 }
 
+is_process_running() {
+  process_name="$1"
+  if [ -z "$(pgrep -f "$process_name")" ]; then
+    return 1
+  else
+    return 0
+  fi
+}
+
 kill_audio_servers() {
     is_process_running "audioserver" && pkill -9 -f "audioserver"
     is_process_running "audioserver.mod" && killall -q "audioserver.mod"
