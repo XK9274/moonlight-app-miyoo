@@ -1,6 +1,6 @@
 {
 	"label":	"Moonlight",
-	"icon":	"icon/icon.png",
+	"icon":	"res/icon/icon.png",
 	"launch":	"script/launch.sh",
     "useswap": 1,
 	"description":	"Game streaming client"
