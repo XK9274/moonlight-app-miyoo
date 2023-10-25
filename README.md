@@ -38,24 +38,37 @@ Currently A is left click, B is right click.
 
 ---
 
-## Installation for Sunshine
+## How to Install and Use Moonlight on your Miyoo MMP
 
-1. **Install Sunshine on your machine.** [Download Sunshine](https://github.com/LizardByte/Sunshine/releases)
-2. **Browse to `https://localhost:47990/`**: Create a local account, log in, and open the Pin page.
-3. **Copy the Moonlight app folder**: Move it to `/mnt/SDCARD/App/moonlight` on your MMP.
-   ![image](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/dda48437-d411-4221-9630-fbab5ce07def)
-5. **Relaunch MainUI on your Miyoo or reboot.**
-6. **Launch the Moonlight app**: Go to "Pair" and press A - type in your computers IP address and press Enter
-   ![script_000](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/0e0e0483-9ef5-4087-96dd-9d3f01c239de)
-6. **Enter the pair screen**: Type in your computers IP address and press Enter
-   ![script_001](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ee5494f8-1655-4a21-b270-6d2a85f42919)
-8. **Input the PIN**: The MMP will provide a pin; you need to input this on the Sunshine dashboard.
-   ![script_002](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/4672f089-285b-4813-88d2-15294b4ce6e6)
-   ![image](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/811c767f-05f1-4034-b889-61e648256a3b)
-10. **Confirmation Page**: On the MMP, you'll see a notification that pairing was complete (or an error if not)
-   ![script_003](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/60dacf24-dcdf-4d2b-acf9-c3f6e92e0650)
-12. **Start streaming**: Head back to the main menu and click "Stream" and select an app!
-   ![script_000](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/fb7c6c2a-b231-41db-ba8a-8972847158b4)
+Follow the steps below to get Moonlight running on your Miyoo MMP:
+
+### Steps
+
+1. **Install Sunshine on your machine**: Download Sunshine from [here](https://github.com/LizardByte/Sunshine/releases).
+
+2. **Local Dashboard**: Open your browser and navigate to `https://localhost:47990/`. Create a local account, log in, and then open the Pin page.
+
+3. **Copy the Moonlight App Folder**: Move the Moonlight app folder to `/mnt/SDCARD/App/moonlight` on your MMP.
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/9ff2cead-98fe-48c3-bf60-242c6106b644">
+
+4. **Restart MainUI**: Relaunch the MainUI on your Miyoo device or simply reboot it.
+
+5. **Launch the Moonlight App**: Navigate to "Pair" and press A. Type in your computer's IP address and press Enter.
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/0e0e0483-9ef5-4087-96dd-9d3f01c239de" width="50%">
+
+6. **Enter the Pair Screen**: Once again, type in your computer's IP address and press Enter.
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ee5494f8-1655-4a21-b270-6d2a85f42919" width="50%">
+
+7. **Input the PIN**: Your Miyoo device will provide a pin; input this pin on the Sunshine dashboard.
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/4672f089-285b-4813-88d2-15294b4ce6e6" width="50%">
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/811c767f-05f1-4034-b889-61e648256a3b" width="50%">
+
+8. **Confirmation Page**: You'll receive a notification on your MMP confirming that the pairing was successful, or an error if it was not.
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/60dacf24-dcdf-4d2b-acf9-c3f6e92e0650" width="50%">
+
+9. **Start Streaming**: Head back to the main menu, click "Stream" and then select an app to stream!
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/fb7c6c2a-b231-41db-ba8a-8972847158b4" width="50%">
+
 
 ---
 
