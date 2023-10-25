@@ -1,7 +1,7 @@
 # Moonlight Miyoo Edition
 
 ## Version
-Moonlight for the Miyoo Mini Plus is currently at v1.2.
+Moonlight for the Miyoo Mini Plus is currently at v1.3.
 
 - [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
 - [Changelog](https://github.com/XK9274/moonlight-app-miyoo/blob/main/README.md#changelog)
@@ -22,7 +22,7 @@ This project is in its early stages and has bugs. This is not restricted to Nvid
 ## Requirements
 
 - Packaged for Onion (Porting to other UIs is welcome)
-- Latest RC of Onion
+- Latest 4.2 of Onion
 - Recent firmware
 
 ---
@@ -38,24 +38,38 @@ Currently A is left click, B is right click.
 
 ---
 
-## Installation for Sunshine
+## How to Install and Use Moonlight on your Miyoo MMP
 
-1. **Install Sunshine on your machine.** [Download Sunshine](https://github.com/LizardByte/Sunshine/releases)
-2. **Browse to `https://localhost:47990/`**: Create a local account, log in, and open the Pin page.
-3. **Copy the Moonlight app folder**: Move it to `/mnt/SDCARD/App/moonlight` on your MMP.
-   ![image](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/dda48437-d411-4221-9630-fbab5ce07def)
-5. **Relaunch MainUI on your Miyoo or reboot.**
-6. **Launch the Moonlight app**: Type in your PC's IP address.  
-   ![script_012](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/8ec94d40-d454-4535-b660-6e68d37ff1ec)
-7. **Input the PIN**: The MMP will provide a pin; you need to input this on the Sunshine dashboard. Minimise the keyboard with X as it might cause problems on the following screens. 
-   ![script_014](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ce398e2b-32a7-4a43-aeab-dea95700dbce)
-8. **Confirmation Page**: On the MMP, you'll see a page asking if this was a success.  
-   ![script_015](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/fdc37de4-16fa-4dca-affb-423e4652eab4)
-9. **Success Screen**: You'll now see a success message.   
-   ![script_016](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ed13c223-c89d-40bc-9646-4a1491a2f4d0)
-10. **App Screen**: Important: Do not press start! Minimise the keyboard with X, then press A to make your selection. When "yes" is selected, you'll now see the app screen.  
-    ![script_017](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/f8ebbafa-a19b-49ef-94f6-b990418b514c)
-11. **Connect to an App**: Select an app and it should connect; sometimes the app fails to launch on both Moonlight and Nvidia GameStream.
+Follow the steps below to get Moonlight running on your Miyoo MMP:
+
+### Steps
+
+1. **Install Sunshine on your machine**: Download Sunshine from [here](https://github.com/LizardByte/Sunshine/releases).
+
+2. **Local Dashboard**: Open your browser and navigate to `https://localhost:47990/`. Create a local account, log in, and then open the Pin page.
+
+3. **Copy the Moonlight App Folder**: Move the Moonlight app folder to `/mnt/SDCARD/App/moonlight` on your MMP.
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/9ff2cead-98fe-48c3-bf60-242c6106b644">
+
+4. **Restart MainUI**: Relaunch the MainUI on your Miyoo device or simply reboot it.
+
+5. **Launch the Moonlight App**: Navigate to "Pair" and press A. Type in your computer's IP address and press Enter.
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/0e0e0483-9ef5-4087-96dd-9d3f01c239de" width="50%">
+
+6. **Enter the Pair Screen**: Once again, type in your computer's IP address and press Enter.
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ee5494f8-1655-4a21-b270-6d2a85f42919" width="50%">
+
+7. **Input the PIN**: Your Miyoo device will provide a pin; input this pin on the Sunshine dashboard.
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/4672f089-285b-4813-88d2-15294b4ce6e6" width="50%">
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/811c767f-05f1-4034-b889-61e648256a3b" width="50%">
+
+8. **Confirmation Page**: You'll receive a notification on your MMP confirming that the pairing was successful, or an error if it was not.
+9. 
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/60dacf24-dcdf-4d2b-acf9-c3f6e92e0650" width="50%">
+
+10. **Start Streaming**: Head back to the main menu, click "Stream" and then select an app to stream!
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/fb7c6c2a-b231-41db-ba8a-8972847158b4" width="50%">
+
 
 ---
 
@@ -99,12 +113,11 @@ The file will contain:
 
 ## To Do
 
-- Add on the go overclocking control w/ keybind.
-- Custom keybinds
-- Mouse swap
-- "Gamepad" support instead of keyboard input
-- Tidy up all the drastic logic
-- Proper wrapper development
+- Add settings menu
+- Go back to menu after quitting a game/stream
+- Add options menu hotkey while streaming
+- Gamepad etc
+- FIX APP STARTUP/QUITTING
 
 ---
 
@@ -119,6 +132,9 @@ The file will contain:
 ---
 
 ## Frequently Asked Questions (FAQ)
+
+### When i launch a game it doesn't start on the remote desktop
+- I think i know why, just haven't had time to look into why the GS (gs_quit_app) function is failing.
 
 ### When i launch the app it says "loading" and then closes instantly
 - If you used filezilla to transfer the files to the card, delete them and use Samba/HTTP instead. IF this doesn't resolve it, check the line endings on the script files are UNIX. not Windows.
@@ -148,15 +164,20 @@ The file will contain:
 ### Input continues to be passed to the host even after exiting Moonlight. Why is this?
 - This is a known issue, and i'm looking into it.
 
-### My UI locks up sometimes when Moonlight doesn’t start (Black screen). What's the cause?
-- This happens when rapidsplash fails to exit. I plan to update the source code to handle signals better. To clear it, open the gameswitcher or use the Search function with the Menu or Y key.
-
-### There's a black screen when starting the app. How can I resolve this?
-- This is caused by Shellect, which builds the shell menus. A change to this component is planned. To temporarily fix it, scroll down on your D-pad several times, press A, and then open the gameswitcher/search menu. Close this and reopen Moonlight.
-
 ---
 
 ## Changelog
+### v1.3
+  - UI overhaul
+  - Refactored most functions
+  - Removed some reliance on the SDL lib
+  - Added more settings for upcoming settings menu (overclocking etc)
+  - Removed splash
+  - Removed binaries that are no longer required
+  - Updated FAQS
+  - Convert all memcpy calls to neon_memcpy
+  - Build libgamestream and libmoonlightcommon as stripped/arm optimised
+    
 ### v1.2
   - Added mouse emulation
 
