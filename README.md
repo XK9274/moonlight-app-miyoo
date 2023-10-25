@@ -64,6 +64,7 @@ Follow the steps below to get Moonlight running on your Miyoo MMP:
    <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/811c767f-05f1-4034-b889-61e648256a3b" width="50%">
 
 8. **Confirmation Page**: You'll receive a notification on your MMP confirming that the pairing was successful, or an error if it was not.
+   
    <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/60dacf24-dcdf-4d2b-acf9-c3f6e92e0650" width="50%">
 
 10. **Start Streaming**: Head back to the main menu, click "Stream" and then select an app to stream!
