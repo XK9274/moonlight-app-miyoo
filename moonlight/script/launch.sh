@@ -70,7 +70,7 @@ start_moonlight() {
     
     kill_audio_servers
     set_snd_level "${curvol}" &
-    LD_PRELOAD=$moonlightdir/lib/libuuid.so moonlight -config ./config/moonlight.conf stream
+    LD_PRELOAD=$moonlightdir/lib/libuuid.so moonlight -config ./config/moonlight.conf menu
 }
 
 main() {
