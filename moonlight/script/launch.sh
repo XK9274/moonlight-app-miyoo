@@ -65,16 +65,16 @@ set_snd_level() {
 start_moonlight() {
     export LD_LIBRARY_PATH=../lib:/lib:/config/lib:/mnt/SDCARD/miyoo/lib:/mnt/SDCARD/.tmp_update/lib:/mnt/SDCARD/.tmp_update/lib/parasyte:/sbin:/usr/sbin:/bin:/usr/bin
     export SDL_VIDEODRIVER=mmiyoo
-    export SDL_AUDIODRIVER=mmiyoo
+    export SDL_AUDIODRIVER=dsp
     export EGL_VIDEODRIVER=mmiyoo
     
-    kill_audio_servers
-    set_snd_level "${curvol}" &
-    LD_PRELOAD=$moonlightdir/lib/libuuid.so moonlight -config ./config/moonlight.conf menu
+    # kill_audio_servers
+    # set_snd_level "${curvol}" &
+    LD_PRELOAD="$miyoodir/lib/libpadsp.so:$moonlightdir/lib/libuuid.so" moonlight -config ./config/moonlight.conf menu
 }
 
 main() {
-    curvol=$(get_curvol) # grab current volume
+    # curvol=$(get_curvol) # grab current volume
     start_moonlight
 }
 
