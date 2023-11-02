@@ -1,7 +1,7 @@
 # Moonlight Miyoo Edition
 
 ## Version
-Moonlight for the Miyoo Mini Plus is currently at v1.4.
+Moonlight for the Miyoo Mini Plus is currently at v1.5.
 
 - [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
 - [Changelog](https://github.com/XK9274/moonlight-app-miyoo/blob/main/README.md#changelog)
@@ -172,6 +172,9 @@ The file will contain:
 ---
 
 ## Changelog
+### v1.5
+  - Fix audio crackle
+    
 ### v1.4
   - Fix audio delay
     
