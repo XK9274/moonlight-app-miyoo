@@ -174,6 +174,15 @@ The file will contain:
 ---
 
 ## Changelog
+
+### v1.5.1
+   - Move to minor versioning
+   - Add new banner logo
+   - Add new app logo
+   - Resource caching
+   - Other minor refactors
+   - Remove some libraries that aren't required.
+     
 ### v1.5
   - Fix audio crackle
     
