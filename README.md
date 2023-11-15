@@ -4,10 +4,12 @@
 Moonlight for the Miyoo Mini Plus is currently at v1.5.
 
 - [Download Latest Version](https://github.com/XK9274/moonlight-app-miyoo/releases)
-- [Changelog](https://github.com/XK9274/moonlight-app-miyoo/blob/main/README.md#changelog)
+- [Changelog](https://github.com/XK9274/moonlight-app-miyoo/tree/main#changelog)
 - [FAQ](https://github.com/XK9274/moonlight-app-miyoo/tree/main#frequently-asked-questions-faq)
-- [Custom Settings/Keybinds](https://github.com/XK9274/moonlight-app-miyoo/tree/main#frequently-asked-questions-faq)
+- [Keybinds](https://github.com/XK9274/moonlight-app-miyoo/tree/main#keybinds)
+- [Custom Settings](https://github.com/XK9274/moonlight-app-miyoo/tree/main#custom-keybindscpuclock-value)
 - [Credits](https://github.com/XK9274/moonlight-app-miyoo#credits)
+
 
 ---
 
