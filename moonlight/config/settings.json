@@ -16,7 +16,7 @@
         "Select": "M",
         "Menu": "ESCAPE"
     },
-    "cpuclock": "1700",
+    "cpuclock": "1400",
     "mouse": {
         "scaleFactor": 2,
         "acceleration": 2.0,
