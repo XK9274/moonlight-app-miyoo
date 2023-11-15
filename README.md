@@ -58,24 +58,32 @@ Follow the steps below to get Moonlight running on your Miyoo MMP:
 
 5. **Launch the Moonlight App**: Navigate to "Pair" and press A. Type in your computer's IP address and press Enter.
 
-   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/0e0e0483-9ef5-4087-96dd-9d3f01c239de" width="50%">
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/e27d5d91-c4e7-4638-937b-319ab2bc7ebe" width="50%">
 
 6. **Enter the Pair Screen**: Once again, type in your computer's IP address and press Enter.
 
-   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/ee5494f8-1655-4a21-b270-6d2a85f42919" width="50%">
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/b4b7f83f-07df-41bd-860c-9627094c32be" width="50%">
 
 7. **Input the PIN**: Your Miyoo device will provide a pin; input this pin on the Sunshine dashboard.
 
-   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/4672f089-285b-4813-88d2-15294b4ce6e6" width="50%">
+   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/570adf8a-7097-4775-97ca-3c052bf303ce" width="50%">
    <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/811c767f-05f1-4034-b889-61e648256a3b" width="50%">
 
 8. **Confirmation Page**: You'll receive a notification on your MMP confirming that the pairing was successful, or an error if it was not.
    
-   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/60dacf24-dcdf-4d2b-acf9-c3f6e92e0650" width="50%">
-
-10. **Start Streaming**: Head back to the main menu, click "Stream" and then select an app to stream!.
+      <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/38306550-e5e9-47eb-920d-e19b3fa74b22" width="50%">
    
-   <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/fb7c6c2a-b231-41db-ba8a-8972847158b4" width="50%">
+10. **Start Streaming**: Head back to the main menu, click "Stream" and then select an app to stream!.
+    
+      <img src="https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/8ceb459d-f374-4086-9c96-802f34a5094c" width="50%">
+
+
+
+
+
+
+
+
 
 
 ---
