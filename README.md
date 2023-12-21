@@ -1,5 +1,8 @@
 # Moonlight Miyoo Edition
 
+## Third party scripts:
+https://github.com/Nonary/ResolutionAutomation - Change the screen resolution automatically on connection
+
 ## Version
 Moonlight for the Miyoo Mini Plus is currently at v1.5.1
 
