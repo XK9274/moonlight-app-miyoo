@@ -1,5 +1,9 @@
 # Moonlight Miyoo Edition
 
+## A how-to/demonstration of Moonlight on the Miyoo Mini Plus by [Handheld Gaming!](https://www.youtube.com/@handheldgaming4life: )
+[![Miyoo Mini+ Streaming](https://github.com/XK9274/moonlight-app-miyoo/assets/47260768/f688bbb9-4619-4f54-b7d7-ef3c8b520e7f)](https://www.youtube.com/watch?v=7R5vW4aDgEo "Moonlight Streaming to your Miyoo Mini+")
+
+
 ## Third party scripts:
 https://github.com/Nonary/ResolutionAutomation - Change the screen resolution automatically on connection
 
