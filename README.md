@@ -146,9 +146,8 @@ The file will contain:
 ## Credits
 
 - Steward for SDL2
-  - [GitHub Repository](https://github.com/steward-fu/sdl/tree/sdl-2.0.20_ssd202d_miyoo-mini_drastic)
-  - [Moonlight Repository](https://github.com/XK9274/sdl2-moonlight-miyoo/tree/sdl-2.0.20_ssd202d_miyoo-mini_moonlight)
-  
+  - [Moonlight Repository](https://github.com/XK9274/moonlight-embedded-miyoo)
+  - [SDL2 Repository](https://github.com/XK9274/sdl2_miyoo/tree/moonlight)
 - [Moonlight Upstream GitHub Repository](https://github.com/moonlight-stream/moonlight-embedded)
 
 ---
